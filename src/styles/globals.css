@@ -38,6 +38,7 @@ body {
   font-size: 1.6rem;
   background-color: var(--main-bg-color);
   position: relative;
+
 }
 
 .flex,
@@ -54,7 +55,13 @@ a {
  text-decoration: none;
 }
 
-
-#hh:hover{
+main{
+ background-color: red;
+ margin-top: 5rem;
+}
+/* #hh:hover{
  color: lightgray;
-}  
+}   */
+.hide{
+ display: none;
+}
