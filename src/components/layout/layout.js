@@ -12,10 +12,7 @@ export default function Layout({ children }) {
        <meta name="description"  content="LakyPos, free and preferred point of sales software"/>
      </Head>
 
-      <Header />
-     {/* <header className={styles.header}>
-       
-     </header> */}
+      <Header/>     
 
      <main>{children}</main>
      
