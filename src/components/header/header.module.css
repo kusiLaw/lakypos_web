@@ -4,9 +4,14 @@
   height: 7rem;
   max-height: 7rem;
   overflow: hidden;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;  z-index: 5;
-  /* opacity: 0.6; */
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; 
+  z-index: 5;
+  /* background-color: transparent; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .mobile_nav_wrapper,

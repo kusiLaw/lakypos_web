@@ -27,9 +27,10 @@ export default function Header () {
   }
 
   const mobile_nav = () =>{
-   console.log( document.getElementById('nav_mob'))
     document.getElementById('nav_mob').classList.toggle('hide')
     setOpen(!isOpen)
+    console.log( document.getElementById('nav_mob'), isOpen)
+
   }
 
   return (
