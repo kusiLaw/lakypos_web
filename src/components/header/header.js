@@ -7,24 +7,11 @@ import LinkButton from "../link_button/button";
 import style from  './header.module.css'
 import {clsx} from 'clsx'
 import { Turn as Hamburger } from 'hamburger-react'
+import MobileList from "./mobile";
 
 export default function Header () {
-   const [isOpen , setOpen] = useState(true)
+   const [isOpen , setOpen] = useState(false)
 
-  const nav_list = (type, id ='nav_mob')=>{
-   return (
-    <>
-      <ul id = {id} className={clsx({
-        [style.desk_nav_list]: type === 'desk_nav_list',
-        [style.mobile_nav_list]: type === 'mobile_nav_list',
-      })}>
-        <li>Home</li>
-        <li>About</li>
-        <li>FAQ</li>
-      </ul>
-    </>
-   )
-  }
 
   const mobile_nav = () =>{
     document.getElementById('nav_mob').classList.toggle('hide')
@@ -68,30 +55,28 @@ export default function Header () {
              <Link href='/'><h1><span className={style.laky}>Laky</span>POS.</h1></Link> 
              <nav className={style.nav}>
                 <div className={style.nav_mobile}>
-                    <div className={`${style.mobile_nav_wrapper} hide`}>
-                      {nav_list('mobile_nav_list')}
-                    </div>
-
-
+                    <MobileList open = {isOpen} />
                     <div className={style.toggle_btn}>
                       <Hamburger size={25} 
                         onToggle={toggled => {
-                          // if (toggled) {
-                          //  setOpen(true)
-                          // } else {
-                          //  setOpen(false)
-
-                          // }
-                          mobile_nav()
+                          if (toggled) {
+                           setOpen(true)
+                          } else {
+                           setOpen(false)
+                          }
+                          // mobile_nav()
                         }}
                       />
                     </div>
-
-    
                 </div>
 
                 <div className={style.nav_desktop}>
-                   {nav_list('desk_nav_list')}
+                   {/* {nav_list('desk_nav_list')} */}
+                   <ul className={style.desk_nav_list}>
+                      <li>Home</li>
+                      <li>About</li>
+                      <li>FAQ</li>
+                  </ul>
                 </div>
              </nav>
 
