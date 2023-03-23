@@ -1,45 +1,39 @@
 import Link from "next/link"
-import styles from './button.module.css'
+// import styles from './link-wrapper.module.css'
 
 const LinkButton = ({url, 
  text, 
- color
-
+ color,
+ width,
+ height,
+ hover_color,
+ hover_text,
+ margin,
+ padding
 }) => {
   return (
-    <div className="link-wrapper">
-       <Link href={`${url}`} >
-          {text}
-       </Link>
-
-
+   <Link href={`${url}`} >
+    <div className="link-button">
+         {text}
        <style jsx>{`
-        .link-wrapper {
-          margin: 50px;
-        }
-        p {
-          color: blue;
-        }
-        `}</style>
-    </div> 
 
+       .link-button{
+         display: flex;
+
+         justify-content: center;
+         background-color : inherit;
+         height: 3rem;
+         padding: 1rem 1.5rem;
+         
+         border: 2px solid #004de4;
+        }
+
+        `}</style>
+
+    </div> 
+    </Link>
 
   )
 }
 
 export default LinkButton
-
-
-// const LinkButton = ({url, text}) => {
-//  return (
-//    // <div className={styles.link_btn}>
-//      <Link href={`${url}`} >
-//      <button className={styles.link_btn}>{text}
-//      {/* <span></span> */}
-//      </button>
-//      </Link>
-//    /* </div> */
-//  )
-// }
-
-// export default LinkButton

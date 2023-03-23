@@ -19,10 +19,9 @@ const MobileList = ({open}) => {
           bottom: 0;
          z-index: 100;
          width: 100vw;
-         height
-         background-color: #657fc5;
+         height: 100vh;
          opacity: 1;
-         color: white;
+         color: #132f4c;
          font-size: 1.8rem;
          letter-spacing: 0.2rem;
          font-weight: 600;
@@ -38,7 +37,7 @@ const MobileList = ({open}) => {
         width: 100%;
         height: 100%;
         padding: 2rem;
-        background-color: #657fc5;
+        background-color: rgba(232, 238, 245, 0.98);
        }
 
      `}</style>

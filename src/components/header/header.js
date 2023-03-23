@@ -12,14 +12,6 @@ import MobileList from "./mobile";
 export default function Header () {
    const [isOpen , setOpen] = useState(false)
 
-
-  const mobile_nav = () =>{
-    document.getElementById('nav_mob').classList.toggle('hide')
-    setOpen(!isOpen)
-    console.log( document.getElementById('nav_mob'), isOpen)
-
-  }
-
   return (
     <header className={style.header}>
 
@@ -64,7 +56,7 @@ export default function Header () {
                           } else {
                            setOpen(false)
                           }
-                          // mobile_nav()
+                       
                         }}
                       />
                     </div>
@@ -79,7 +71,6 @@ export default function Header () {
                   </ul>
                 </div>
              </nav>
-
              <div className={style.nav_link_btn}>
                <LinkButton text='Feedback' url='#'/>
              </div>
