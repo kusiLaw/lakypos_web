@@ -51,7 +51,7 @@ export default function Home() {
          <div className='card-wrapper flex'>  
             <Card
               icon =<Grow />
-              title = "Free"
+              title = "Business Growth"
               text = ' LakyPOS software is aimed to help you grow your company. You do not require to pay any money before using this project. Thanks to Lakypos team '
             />
 
@@ -70,6 +70,21 @@ export default function Home() {
          </div>
         
          
+     </section>
+
+     <section className='contact_us flex'> 
+        <h2>Support</h2>
+        <div className='contact_us_wrapper'>
+          <div className='contact_note '>
+             <h3>Contact US</h3>
+             <p> Your feedback is important to Us. </p>
+             <p>Our team is here to help you get support, answers to your questions,
+              suggestions and make sure you get great user experience with our products.</p> 
+          </div>
+          <div className='form_wrapper'>
+             <InputText type='password' label='Password' name='pa'/>
+          </div>
+        </div>
      </section>
     </Layout>
   )
