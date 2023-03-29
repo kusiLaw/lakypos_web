@@ -1,0 +1,25 @@
+.footer{
+ height: 20rem;
+ display: flex;
+ flex-direction: column;
+}
+
+.footer_wrapper{
+ height: 100%;
+ border: 1px solid red;
+}
+
+.footer_right{
+ font-size: 0.8rem;
+ width: 50%;
+ height: 100%;
+ /* background-image: url(../../../public/pattern-curve.svg);
+background-size: 5rem auto;
+background-position: left 10% top 0px;
+/* background-position: right 0px bottom 0px; */
+/*background-repeat: no-repeat; */
+}
+
+.laky{
+ color: #004de4;
+}

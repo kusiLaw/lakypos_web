@@ -1,0 +1,49 @@
+.fag{
+  padding: 2rem 1rem;
+  color: #132f4c;
+  border-bottom: 1px solid gray;
+}
+
+.fag_wrapper{
+ display: flex;
+ flex-direction: column;
+}
+
+.fag_question{
+ display: flex;
+ flex-wrap: wrap;
+ line-break:strict;
+ font-weight: 200;
+ /* padding-left: 1rem; */
+}
+
+.question{
+ display: flex;
+ align-items: center;
+}
+
+.fag_question_text{
+ display: inline-block;
+}
+
+.fag_number{
+ display: inline-block;
+ margin-right: 1rem;
+ font-weight: 900;
+ font-style: italic;
+ font-size: 2.5rem;
+ letter-spacing: 5px;
+ color: #ccddee;
+
+}
+
+.ans_wrapper{
+  /* background-color: #f3f6f9; */
+  padding: 1rem;
+  margin: 2rem 0rem;
+  /* margin: 1rem 2rem; */
+  align-self: center;
+  width: 90%;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 2px, rgba(0, 0, 0, 0.23) 0px 1px 1px; */
+
+}
