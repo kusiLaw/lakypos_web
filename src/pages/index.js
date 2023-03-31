@@ -11,6 +11,7 @@ import Layout from '@/components/layout/layout'
 import Card from '@/components/cards/card'
 import {InputText, TextArea} from '@/components/input/input'
 import Fag from '@/components/fag/fag';
+import LinkButton from '@/components/link_button/button';
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +36,18 @@ export default function Home() {
                 Users Preferred Choice Point of Sales 2023.  <br/>
                 Free | Fast | User Friendly | Live Update.
              </p>
-             
+             <div className='welcome_buttons flex'> 
+             <LinkButton 
+             text={'Download'}
+             padding = {[20, 60]}
+              border = '3'
+             />   
+             <LinkButton 
+             text={'Support Us'}
+              padding = {[20, 60]}
+              border = '3'
+              color = '#ff9800'
+             />  </div>
          </div>
          <div className='welcome-img'>
          <Image
