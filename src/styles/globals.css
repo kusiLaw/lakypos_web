@@ -5,7 +5,7 @@
    --color-blue : #004de4;
    --color-blue-background : #0244c6;
    --color-footer : #ebecf2;
-   --text-color : #132f4c;
+   --text-color : hsl(211, 60%, 19%);
    --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -136,7 +136,10 @@ main{
  gap: 2rem;
 }
 
-
+.link-button:hover{
+ color: white;
+ background-color: var(--color-dark-text);
+}
 
 .benefits{
  background-color: white;
@@ -208,7 +211,7 @@ main{
 }
 
 .form_wrapper{
-  padding: 4rem 2rem;
+  padding:  2rem;
 }
 
 .fag-container {
@@ -241,7 +244,9 @@ main{
  color: var(--color-blue);
 }
 
-
+.contact_btn_wrapper{
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 425px) {
    .welcome-img{
@@ -404,6 +409,11 @@ main{
  width: 100%;
 }
 
+
+.download{
+  padding: 25rem 65rem;
+  border: 3px solid var(--color-dark-text);
+}
 /* .fag-wrapper{
  display: flex;
  flex-wrap: wrap;

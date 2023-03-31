@@ -4,9 +4,7 @@ import Link from "next/link"
 const LinkButton = ({url, 
  text, 
  color,
- hover_color,
- hover_text,
- margin,
+ font_size,
  padding,
  border
 }) => {
@@ -18,15 +16,22 @@ const LinkButton = ({url,
     <style jsx>{`
 
       .link-button{
-        display: flex;
-        color: ${ color ? `${color}` : '#004de4'};
-        justify-content: center;
+        {/* display: flex; */}
+        color: ${ color ? `${color}` : '#dd2c00'};
+        {/* justify-content: center; */}
         background-color : inherit;
-        padding: ${ padding ? `${padding[0]}px ${padding[1]}px `: '12px 25px'};
-        font-size : 1rem;
-        border-radius: 5px;
-        border: ${ border ? `${border}px solid #004de4`: '2px solid #004de4'} ;
+        padding: ${ padding ? `${padding} `: '12px 30px'};
+        font-size : 1.2rem;
+        border-radius: 99px;
+        border: ${ border ? `${border}px solid ${color}`: '2px solid #dd2c00'} ;
        }
+
+       .link-button:hover{
+        color: white;
+        background-color: ${ color ? `${color}` : '#dd2c00'};
+}
+       }
+
 
  `}</style>
 

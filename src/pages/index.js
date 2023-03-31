@@ -38,15 +38,17 @@ export default function Home() {
              </p>
              <div className='welcome_buttons flex'> 
              <LinkButton 
-             text={'Download'}
-             padding = {[20, 60]}
-              border = '3'
+               text= 'Download'
+               padding = '20px 60px'
+               border = '3'
+               color='#132f4c'
              />   
              <LinkButton 
-             text={'Support Us'}
-              padding = {[20, 60]}
-              border = '3'
-              color = '#ff9800'
+               text={'Support Us'}
+               padding = '20px 60px'
+               border = '3'
+               color= '#004de4'
+               
              />  </div>
          </div>
          <div className='welcome-img'>
@@ -163,6 +165,14 @@ export default function Home() {
        
                 <div className='form_text' >
                      <TextArea label="Message" name="message" maxLength='500'/>
+                </div>
+                <div className='contact_btn_wrapper flex' >
+                     <LinkButton 
+                        text= 'Submit'
+                        padding = '15px 40px'
+                        border = '3'
+                        color='#132f4c'
+                      /> 
                 </div>
                 
              </form>
