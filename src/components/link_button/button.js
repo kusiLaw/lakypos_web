@@ -1,16 +1,17 @@
 import Link from "next/link"
-// import styles from './link-wrapper.module.css'
+import styles from './button.module.css'
 
 const LinkButton = ({url, 
  text, 
  color,
  font_size,
  padding,
- border
+ border,
+ responsive
 }) => {
   return (
    <Link href={`${url}`} >
-    <div className="link-button">
+    <div className={`link-button ${styles.responsive}`} >
          {text}
     </div> 
     <style jsx>{`
@@ -29,9 +30,14 @@ const LinkButton = ({url,
        .link-button:hover{
         color: white;
         background-color: ${ color ? `${color}` : '#dd2c00'};
-}
+         }
        }
 
+       @media screen and (min-width: 768px) {
+ .link-button{
+  background-color : yellow;
+
+ }
 
  `}</style>
 
