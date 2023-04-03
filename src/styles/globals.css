@@ -109,11 +109,25 @@ main{
 
 .welcome p{
  font-size: 1.3rem;
- font-weight: 900;
+ font-weight: 700;
+ letter-spacing: 10px;
  color: #132f4c;
  letter-spacing: 0.1rem;
  padding: 1rem 0rem;
- padding-bottom: 5rem;
+ padding-bottom: 3rem;
+}
+
+.welcome-p1{
+ margin-top: 4px;
+ display: block;
+}
+
+.welcome-features{
+ display: block;
+ letter-spacing: 2px;
+ font-weight:900;
+ margin-top: 12px;
+ font-size: 1.5rem;
 }
 
 .welcome-img{
@@ -248,6 +262,18 @@ main{
   justify-content: flex-end;
 }
 
+
+.welcome .ui{
+ color: #818799;
+}
+
+/* .welcome_buttons{
+ flex-direction: column;
+ flex: 0 0 auto;
+ justify-content: flex-start;
+} */
+
+
 @media screen and (min-width: 425px) {
    .welcome-img{
     width: 90%;
@@ -263,7 +289,7 @@ main{
    padding: 1rem;
    margin-top: 10rem;
    justify-content: center;
-   padding-bottom: 5rem;
+   padding-bottom: 6rem;
    gap: 1rem;  /*reset mobile gap to use percentage*/
  }
 
@@ -309,6 +335,11 @@ main{
 
  }
 
+ .contact_us_wrapper{
+  box-shadow: 0rem 1rem 1rem rgba(31, 34, 42, 0.2);
+
+ }
+
  .form_divider{
    flex-direction: row;
    justify-content: space-between;
@@ -340,12 +371,29 @@ main{
   margin-top: 12rem;
    padding: 1rem 3rem;
    padding-bottom: 6rem;
+ 
  }
 
  .welcome-text h2{
-  font-size: 2.4rem;
+  font-size: 3.2rem;
  
  }
+
+
+ .welcome p{
+  padding-bottom: 3rem;
+
+ }
+
+ .welcome-p1,
+.welcome-features{
+ display: block;
+ letter-spacing: 5px;
+ margin-top: 12px;
+ font-size: 1.6rem
+}
+
+
  .benefits{
   padding: 5rem 2rem;
  }
@@ -372,13 +420,9 @@ main{
                    white  0%, 
                    white  50%,
                    #132f4c 50%);
-  background-image: linear-gradient(105deg,
-                    #132f4c 0%, 
-                    #132f4c  50%,
-                   white 50%);
+  
    display:flex;
    justify-content: space-between;
-  box-shadow: 0rem 1rem 1rem rgba(31, 34, 42, 0.2);
   /* box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 2px, rgba(0, 0, 0, 0.23) 0px 1px 1px; */
    width: 90%;
    align-self: center;
@@ -410,21 +454,12 @@ main{
 }
 
 
+
 .download{
   padding: 25rem 65rem;
   border: 3px solid var(--color-dark-text);
 }
-/* .fag-wrapper{
- display: flex;
- flex-wrap: wrap;
- gap: 5%;
- flex-direction: row;
- flex: 1 1 40%;
-} */
 
-/* .Fag{
- width: 50%;
-} */
 }
 
 

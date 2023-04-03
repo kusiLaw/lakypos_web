@@ -6,13 +6,12 @@ import styles from '@/styles/Home.module.css'
 import { GrGrow as Grow } from "@react-icons/all-files/gr/GrGrow";
 import { GrUpdate as Update } from "@react-icons/all-files/gr/GrUpdate";
 import { FaRegSmileWink as Smile } from "@react-icons/all-files/fa/FaRegSmileWink";
-
 import Layout from '@/components/layout/layout'
 import Card from '@/components/cards/card'
-import {InputText, TextArea} from '@/components/input/input'
+import InputText from '@/components/input/input'
+import TextArea from '@/components/input/textarea'
 import Fag from '@/components/fag/fag';
 import LinkButton from '@/components/link_button/button';
-
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -31,10 +30,10 @@ export default function Home() {
        <div className='welcome_wrapper flex'>
          <div className='welcome-text'>
              <h2>LAKY POS FOR SMALL AND LARGE BUSINESSES</h2>
-             <p className=''>
-                Welcome to lakyPOS. <br/>
-                Users Preferred Choice Point of Sales 2023.  <br/>
-                Free | Fast | User Friendly | Live Update.
+             <p className='welcome-p1'>
+                Welcome to lakyPOS. 
+                Users' Choice Point of Sales Software.   
+              <span className='welcome-features'>  Free | Fast | User Friendly | Live Update. </span>
              </p>
              <div className='welcome_buttons flex'> 
              <LinkButton 
@@ -42,13 +41,14 @@ export default function Home() {
                padding = '20px 60px'
                border = '3'
                color='#132f4c'
-             />   
+               responsive = '.responsive'
+                            />   
              <LinkButton 
                text={'Support Us'}
                padding = '20px 60px'
                border = '3'
                color= '#004de4'
-               
+              className='ui'
              />  </div>
          </div>
          <div className='welcome-img'>
@@ -169,7 +169,7 @@ export default function Home() {
                 <div className='contact_btn_wrapper flex' >
                      <LinkButton 
                         text= 'Submit'
-                        padding = '15px 40px'
+                        padding = '12px 40px'
                         border = '3'
                         color='#132f4c'
                       /> 
@@ -179,6 +179,7 @@ export default function Home() {
           </div>
         </div>
      </section>
+
 
 
     </Layout>
