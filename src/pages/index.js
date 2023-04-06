@@ -32,7 +32,7 @@ export default function Home() {
              <h2>LAKY POS FOR SMALL AND LARGE BUSINESSES</h2>
              <p className='welcome-p1'>
                 Welcome to lakyPOS. 
-                Users' Choice Point of Sales Software.   
+                Users{"'"} Choice Point of Sales Software.   
               <span className='welcome-features'>  Free | Fast | User Friendly | Live Update. </span>
              </p>
              <div className='welcome_buttons flex'> 
