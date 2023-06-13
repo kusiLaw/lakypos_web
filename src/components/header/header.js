@@ -1,53 +1,21 @@
 import Link from "next/link";
 import { useState } from "react";
-import { AiFillGithub } from "@react-icons/all-files/ai/AiFillGithub";
-import { AiOutlineMail } from "@react-icons/all-files/ai/AiOutlineMail";
-import { AiFillLinkedin } from "@react-icons/all-files/ai/AiFillLinkedin";
 import LinkButton from "../link_button/button";
 import style from  './header.module.css'
-import {clsx} from 'clsx'
 import { Turn as Hamburger } from 'hamburger-react'
 import MobileList from "./mobile";
-
+import Logo from "../logo/logo";
 
 export default function Header () {
    const [isOpen , setOpen] = useState(false)
 
   return (
-    <header className={style.header}>
-
-        <div className={style.header_1_wrapper}>
-          <div className={style.header_1_wrapper_inner}>
-             <div className={style.description}>
-                {/* <p>Your free POS software</p> */}
-             </div>
-             <div className={style.social_links}>
-                 <div className={`${style.social_links_item}`}>
-                   <Link href="https://github.com/kusiLaw/laky-phone-POS" legacyBehavior > 
-                    <AiFillGithub />
-                   </Link>
-                 </div>
-               
-                 <div className={`${style.social_links_item}`}>
-                   <Link href="https://www.linkedin.com/in/lawrence-addai-kusi/" legacyBehavior > 
-                      <AiFillLinkedin />
-                   </Link>
-                 </div>
-
-                 <div className={`${style.social_links_item}`}>
-                   <Link href="mailto:lawrence.kusi.addai@gmail.com" legacyBehavior > 
-                      <AiOutlineMail />
-                   </Link>
-                </div>
-             </div>
-          </div>
-        </div>
-
-        <div className={style.header_2_wrapper}>
-          <div className={style.header_2_inner_wrapper}>
-             <Link href='/'><h1><span className={style.laky}>Laky</span>POS.</h1></Link> 
-             <nav className={style.nav}>
-                <div className={style.nav_mobile}>
+    <header className='fixed top-0 right-0 left-0  bg-white w-full h-fit drop-shadow-lg z-30'>
+        <div className='w-full h-fit bg-transparent  '>
+          <div className='flex justify-between items-center w-full py-2 px-2 md:px-8 '>
+            <Logo />
+             <nav className='w-[50%]  flex justify-end md:justify-center items-center'>
+                <div className='flex md:hidden  '>
                     <MobileList open = {isOpen} />
                     <div className={style.toggle_btn}>
                       <Hamburger size={25} 
@@ -63,19 +31,19 @@ export default function Header () {
                     </div>
                 </div>
 
-                <div className={style.nav_desktop}>
-                   {/* {nav_list('desk_nav_list')} */}
-                   <ul className={style.desk_nav_list}>
+                <div className='hidden md:block'>
+                   
+                   <ul className='flex text-2xl font-medium gap-6 cursor-pointer'>
                       <li>Home</li>
                       <li>About</li>
                       <li>FAQ</li>
                   </ul>
                 </div>
              </nav>
-             <div className={style.nav_link_btn}>
+             <div className='hidden md:flex'>
                <LinkButton text='Feedback' url='#'/>
               
-             </div>
+             </div> 
              
           </div>
        </div>
