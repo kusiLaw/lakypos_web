@@ -12,9 +12,9 @@ const Social = () => {
       <div className='relative flex flex-col items-center gap-4'>
           {displayChat && 
           <>
-            <div className=' font-black text-[3.4rem] text-[#128C7E] bg-white bg-'>
+            <div className=' font-black text-[3.4rem] text-[#128C7E] drop-shadow-md'>
                 <img className='w-[35px] md:w-[50px]'
-                  src={'/facebook.svg'} 
+                  src={'/facebook.jpg'} 
                   alt="Your Name" 
                   />
             </div>

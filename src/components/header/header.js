@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import LinkButton from "../link_button/button";
-import style from  './header.module.css'
 import { Turn as Hamburger } from 'hamburger-react'
 import MobileList from "./mobile";
 import Logo from "../logo/logo";
@@ -17,7 +16,7 @@ export default function Header () {
              <nav className='w-[50%]  flex justify-end md:justify-center items-center'>
                 <div className='flex md:hidden  '>
                     <MobileList open = {isOpen} />
-                    <div className={style.toggle_btn}>
+                    <div className={``}>
                       <Hamburger size={25} 
                         onToggle={toggled => {
                           if (toggled) {
@@ -41,7 +40,7 @@ export default function Header () {
                 </div>
              </nav>
              <div className='hidden md:flex'>
-               <LinkButton text='Feedback' url='#'/>
+               <LinkButton text='Feedback' url='#' bg={''} />
               
              </div> 
              
