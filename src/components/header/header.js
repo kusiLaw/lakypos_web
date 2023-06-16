@@ -1,12 +1,16 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState ,useContext } from "react";
 import LinkButton from "../link_button/button";
 import { Turn as Hamburger } from 'hamburger-react'
 import MobileList from "./mobile";
 import Logo from "../logo/logo";
+import { NotifyMeContext } from "@/pages/provider";
+
 
 export default function Header () {
    const [isOpen , setOpen] = useState(false)
+   const {setDisplayNotifyMe} =  useContext(NotifyMeContext)
+
 
   return (
     <header className='fixed top-0 right-0 left-0  bg-white w-full h-fit drop-shadow-lg z-30'>
@@ -39,12 +43,16 @@ export default function Header () {
                   </ul>
                 </div>
              </nav>
-             <div className='hidden md:flex'>
-               <LinkButton text='Feedback' url='#' bg={''} />
-              
+             <div className='hidden md:flex' >
+               {/* <LinkButton   text='Get Update Notification' url='#' bg={''} /> */}
+               <button onClick={() => setDisplayNotifyMe(true)} className='md:text-xl  bg-white  text-context_color
+               shadow-md  px-3 py-2  rounded-full  border border-context_color  
+               hover:bg-[#fc5c2c] hover:text-white '>
+                           Get Update Notification
+                  </button>
+                  <Link href={''}>Join Us</Link>
              </div> 
-             
-          </div>
+            </div>
        </div>
 
     </header>

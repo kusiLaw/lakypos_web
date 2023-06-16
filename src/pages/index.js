@@ -13,10 +13,13 @@ import TextArea from '@/components/input/textarea'
 import Fag from '@/components/fag/fag';
 import LinkButton from '@/components/link_button/button';
 import Social from '@/components/social/social';
+import NotifyMe from '@/components/forms/notifyMe';
+import { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
+ 
  const handleSubmit = () =>{
    
   }
@@ -28,11 +31,13 @@ export default function Home() {
 
       </Head>
      <Social />
-     <section className='flex relative  items-center  h-[85vh] min-h-fit
+     <NotifyMe />
+     <section className='flex relative  items-center h-[90vh] md:h-[85vh] min-h-fit
                  bg-fixed bg-no-repeat bg-cover bg-[url("../../public/sales_sm.jpg")] md:bg-[url("../../public/unity2.jpg")] '>
-          <div className='flex flex-col gap-11 items-center justify-center h-full w-full      min-h-fit
+          <div className='flex flex-col items-center justify-center h-full w-full      min-h-fit
                        backdrop-blur-sm bg-black/30 ' >
-                <div className='flex justify-center flex-col mt-[20%] gap-2 md:-mt-10 md:gap-5 text-white w-full h-full px-3 md:px-8 lg:px-16  '>
+                <div className='flex justify-center flex-col  mt-[15%]  md:-mt-10 md:gap-5
+                                text-white w-full h-full px-3 md:px-8 lg:px-16 overflow-hidden  '>
                     <h2 className='text-2xl  md:text-[2rem] lg:text-[2.8rem]/[55px] select-text   min-h-fit
                     md:text-left font-semibold md:font-extrabold '>
                     LAKY POS FOR SMALL AND LARGE SCALE<span className='lg:block'>  BUSINESSES</span></h2>
@@ -41,7 +46,7 @@ export default function Home() {
                        Users{"'"} Choice Point of Sales Software.   
                      <span className='block my-5 font-light  tracking-widest'>  Free | Fast | User Friendly | Live Update. </span>
                     </p>
-                    <div className='md:mt-2 flex'> 
+                    <div className='md:mt-2 flex gap-4 '> 
                             <LinkButton 
                               url = '#'
                               text= 'Support Us'
@@ -51,11 +56,11 @@ export default function Home() {
                               bg='bg-[#ff6e40]'
                               color='text-white'
                             />   
-                  
                     </div>
                 </div>
         
-        </div>  
+        </div> 
+        
      </section>
      {/* absolute top-[20%] md:top-36 md:pt-8 */}
      {/* border-4   */}

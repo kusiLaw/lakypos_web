@@ -6,7 +6,7 @@ import Footer from "../footer/footer";
 
 export default function Layout({ children }) {
  return (
-   <div className='w-full h-auto '>
+   <div className='w-full h-auto relative '>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
