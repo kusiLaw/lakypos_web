@@ -1,8 +1,5 @@
 import Head from 'next/head'
 import Link from "next/link";
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-// import styles from '@/styles/Home.module.css'
 import { GrGrow as Grow } from "@react-icons/all-files/gr/GrGrow";
 import { GrUpdate as Update } from "@react-icons/all-files/gr/GrUpdate";
 import { FaRegSmileWink as Smile } from "@react-icons/all-files/fa/FaRegSmileWink";
@@ -14,9 +11,6 @@ import Fag from '@/components/fag/fag';
 import LinkButton from '@/components/link_button/button';
 import Social from '@/components/social/social';
 import NotifyMe from '@/components/forms/notifyMe';
-import { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
  
@@ -62,34 +56,39 @@ export default function Home() {
         </div> 
         
      </section>
-     {/* absolute top-[20%] md:top-36 md:pt-8 */}
-     {/* border-4   */}
-    {/* <section className='benefits flex bg-black'> 
+   
+    <section className='py-20 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'> 
     
-         <h2> BENEFITS </h2>
-         <div className='card-wrapper flex'>  
-            <Card
-              icon =<Grow />
-              title = "Business Growth"
-              text = ' LakyPOS software is aimed to help you grow your company. You do not require to pay any money before using this project. Thanks to Lakypos team '
-            />
-
-            <Card
-              icon = <Smile />
+         <h2 className='self-center  text-default_blue font-black text-2xl md:text-[2rem]'>
+          BENEFITS </h2>
+         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-8 '>  
+            <Card title = "Business Growth"
+                   text = {` LakyPOS software is aimed to help you grow your company.
+                       You do not require to pay any money before using this project.
+                        Thanks to Lakypos team `}>
+                   <Grow />
+            </Card>
+            <Card 
               title = "User Friendly"
-              text = "Using this software does not require any special training. The interface follows modern and proper design guidelines, making it easy to use.  "
-            />
+              text = {`Using this software does not require any special training. 
+                     The interface follows modern and proper design guidelines, 
+                     making it easy to use.  `}>
+               <Smile />
+            </Card> 
 
-          
-            <Card
-              icon = <Update />
-              title = "Live Update"
-              text = " It provides Live update from Sales enable users to gain better insight into their data to make a better decision. Besides the software is updated every 3 months "
-            />
+            <Card                
+               title = {"Live Update"}
+               text = {`It provides Live update from Sales 
+                        enable users to gain better insight into their data to 
+                        make a better decision. Besides the software is updated
+                         every 3 months `}>
+               <Update />
+            </Card>
+
          </div>
         
          
-     </section> */}
+     </section>
 
     <section className='fag-container c-flex'>
        <div className='fag_inner_wrapper c-flex'>

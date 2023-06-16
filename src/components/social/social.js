@@ -8,7 +8,7 @@ import { RiWhatsappFill} from 'react-icons/ri'
 const Social = () => {
   const [displayChat, setDisplayChat] = useState(false)
   return (
-   <div className='fixed bottom-5  right-5 md:bottom-10 md:right-10 z-20 w-fit h-fit'>
+   <div className='fixed bottom-4  right-3 md:bottom-10 md:right-10 z-20 w-fit h-fit'>
       <div className='relative flex flex-col items-center gap-4'>
           {displayChat && 
           <>

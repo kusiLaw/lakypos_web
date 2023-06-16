@@ -44,13 +44,13 @@ export default function Header () {
                 </div>
              </nav>
              <div className='hidden md:flex' >
-               {/* <LinkButton   text='Get Update Notification' url='#' bg={''} /> */}
+               
                <button onClick={() => setDisplayNotifyMe(true)} className='md:text-xl  bg-white  text-context_color
                shadow-md  px-3 py-2  rounded-full  border border-context_color  
                hover:bg-[#fc5c2c] hover:text-white '>
                            Get Update Notification
                   </button>
-                  <Link href={''}>Join Us</Link>
+                  {/* <Link href={''}>Join Us</Link> */}
              </div> 
             </div>
        </div>

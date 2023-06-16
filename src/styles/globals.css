@@ -20,85 +20,6 @@
 
 
 
-/* .welcome h2{
- font-size: 2rem;
- font-weight: 900;
-  letter-spacing: 0.1rem;
- 
-  background: linear-gradient(to right, var(--text-color), var(--color-blue));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}  */
-
-/* .welcome-text{ */
- /* width: 100%; */
- /* padding: 1rem;
- margin-bottom: 3rem; */
- /* border: 1px solid gray; */
-/* } */
-
-/* .welcome p{
- font-size: 1.3rem;
- font-weight: 700;
- letter-spacing: 10px;
- color: #132f4c;
- letter-spacing: 0.1rem;
- padding: 1rem 0rem;
- padding-bottom: 3rem;
-}
-
-.welcome-p1{
- margin-top: 4px;
- display: block;
-}
-
-.welcome-features{
- display: block;
- letter-spacing: 2px;
- font-weight:900;
- margin-top: 12px;
- font-size: 1.5rem;
-}
-
-.welcome-img{
- width: 100%;
- padding: 2rem 2.3rem;
- justify-content: center;
- align-content: center;
-
-}
-
-.img-diagram{
-  width: 100%;
-  height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-.welcome_buttons{
- 
- gap: 2rem;
-}
-
-.link-button:hover{
- color: white;
- background-color: var(--color-dark-text);
-} */
-/* 
-.benefits{
- background-color: white;
- flex-direction: column;
- align-items: center;
- padding: 5rem 2rem;
- color: var(--color_primary_text);
-
-}
-
-.benefits h2{
- align-self: center;
- margin-bottom: 2rem;
- color:  var(--text-color);
-}
 
 .card-wrapper{
   padding: 2rem 1rem;
@@ -244,15 +165,7 @@
   padding: 1rem;
  } */
 
- .benefits{
-  background-color: white;
-  padding: 4rem 2rem;
- }
- 
- .benefits h2{
-   display: flex;
-   justify-self: center;
- }
+
 
  .card-wrapper{
   align-items: center;
@@ -289,47 +202,8 @@
 
 
 @media screen and (min-width: 1024px ) {
- /* .card-wrapper{
-  flex-direction: row;
-  padding: 2rem;
-  flex: 1 1 25%;
- } */
-
-
- /* .welcome{
-  margin-top: 12rem;
-   padding: 1rem 3rem;
-   padding-bottom: 6rem;
  
- } */
 
- /* .welcome-text h2{
-  font-size: 3.2rem;
- 
- } */
-
-
- /* .welcome p{
-  padding-bottom: 3rem;
-
- } */
-
- /* .welcome-p1,
-.welcome-features{
- display: block;
- letter-spacing: 5px;
- margin-top: 12px;
- font-size: 1.6rem
-} */
-
-
- .benefits{
-  padding: 5rem 2rem;
- }
-
-  .benefits h2{
-   margin-bottom: 3rem;
-  }
 
  .contact_us{
   padding: 5rem 2rem;
