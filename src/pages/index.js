@@ -12,6 +12,7 @@ import LinkButton from '@/components/link_button/button';
 import Social from '@/components/social/social';
 import NotifyMe from '@/components/forms/notifyMe';
 import { FaQuoteLeft } from 'react-icons/fa';
+import UnderDev from '@/components/underdev/underdev';
 
 export default function Home() {
  
@@ -27,6 +28,7 @@ export default function Home() {
       </Head>
      <Social />
      <NotifyMe />
+     <UnderDev />
      <section className='flex relative  items-center h-[90vh] md:h-[85vh] min-h-fit
                  bg-fixed bg-no-repeat bg-cover bg-[url("../../public/sales_sm.jpg")] md:bg-[url("../../public/unity2.jpg")] '>
           <div className='flex flex-col items-center justify-center h-full w-full      min-h-fit
