@@ -11,6 +11,7 @@ import Fag from '@/components/fag/fag';
 import LinkButton from '@/components/link_button/button';
 import Social from '@/components/social/social';
 import NotifyMe from '@/components/forms/notifyMe';
+import { FaQuoteLeft } from 'react-icons/fa';
 
 export default function Home() {
  
@@ -57,11 +58,11 @@ export default function Home() {
         
      </section>
    
-    <section className='py-20 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'> 
+    <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'> 
     
          <h2 className='self-center  text-default_blue font-black text-2xl md:text-[2rem]'>
           BENEFITS </h2>
-         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 px-4 md:px-8 '>  
+         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 '>  
             <Card title = "Business Growth"
                    text = {` LakyPOS software is aimed to help you grow your company.
                        You do not require to pay any money before using this project.
@@ -90,10 +91,17 @@ export default function Home() {
          
      </section>
 
-    <section className='fag-container c-flex'>
-       <div className='fag_inner_wrapper c-flex'>
-          <h2>FAQ</h2>
-          <div className='fag-wrapper c-flex'>
+    <section className='py-16 md:py-20 relative px-3 md:px-8 lg:px-16  c-flex  '>
+       <div className='absolute top-0 left-3 md:left-12 lg:left-20 text-[3rem] md:text-[5rem] text-default_hover -rotate-[25deg] -z-10 opacity-50'>
+         <FaQuoteLeft /> 
+       </div>
+       
+       <div className='flex flex-col'>
+          <h2 className='self-center  text-default_blue font-black text-2xl 
+          md:text-[2rem]'>
+          FAQ
+          </h2>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
              <Fag className="Fag"
              question='Why lakyPOS  and what do we use it for ?'
              num = '01'
@@ -111,15 +119,15 @@ export default function Home() {
              question='What is the difference between lakyPOS and lakyPhonePOS ?'
              num = '02'
              >
-                <p>LakyPOS is a newer version of <Link href=''><span className='fag_links'>LakyPhonePOS</span> </Link> . 
+                <p>LakyPOS is a newer version of <Link href=''><span className='inline text-blue-600 '>LakyPhonePOS</span> </Link> . 
                  After 8years of working experience in mobile phone services and sales, 
-                 the developer <Link href=''><span className='fag_links'>(Lawrence Addai Kusi ) </span> </Link> 
+                 the developer <Link href=''><span className='inline text-blue-600 '>(Lawrence Addai Kusi ) </span> </Link> 
                  came out with the first version of this software named “LakyPhonePOS” 
                  to manage sales transactions and automate other repetitive tasks at 
                  the mobile phone shop.  The new version is a general-purpose POS software 
                  to manage sales and transactions hence the name lakyPOS. 
                  The new version also comes with other new features and it will be launched in 
-                 August 2023. <Link href=''><span className='fag_links'>Notified Me</span></Link>  when released</p>
+                 August 2023. <Link href=''><span className='inline text-blue-600 '>Notified Me</span></Link>  when released</p>
              </Fag>
 
              <Fag className="Fag"
@@ -127,12 +135,12 @@ export default function Home() {
              num = '03'
              >
               <p>
-                  LakyPOS is a free software under the <Link href=''><span className='fag_links'> MIT Licence. </span></Link>   
+                  LakyPOS is a free software under the <Link href=''><span className='inline text-blue-600 '> MIT Licence. </span></Link>   
                    It aimed to help you grow your company. 
                   You do not require to pay any money before using this software.
                    Thanks to the lakyPOS team. You can support 
                    lakyPOS project to help us provide better solutions and seamless features.  
-                   <Link href=''><span className='fag_links'> Support Us  </span></Link> Or<Link href=''><span className='fag_links'> Join Our Team</span> </Link>  
+                   <Link href=''><span className='inline text-blue-600 '> Support Us  </span></Link> Or<Link href=''><span className='fag_links'> Join Our Team</span> </Link>  
              </p>
 
 
