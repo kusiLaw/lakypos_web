@@ -15,7 +15,7 @@ const UnderDev = () => {
            work as expected. <br/> We are working very hard to make it become fully functional before 31-07-2023
            
            <br/>
-   
+           Thank you.
         </p>
 
         <p onClick={()=>{setDisplay(false); setDisplayNotifyMe(true)}} className="text-end text-default_blue cursor-pointer text-lg">Notify Me </p>
