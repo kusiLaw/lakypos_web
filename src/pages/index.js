@@ -64,19 +64,26 @@ export default function Home() {
 
          <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
           BENEFITS </h2>
-         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 '>
+         <div className='grid grid-cols-1  md:grid-cols-2 gap-6 md:gap-6 '>
             <Card title = "Business Growth"
                    text = {` LakyPOS software is aimed to help you grow your company.
                        You do not require to pay any money before using this project.
                         Thanks to Lakypos team `}>
-                   <Grow />
+
+
+                     <img src="/Meeting.svg" alt='' className='w-[80%] drop-shadow-md h-auto'/>
+
+
+
+
             </Card>
             <Card
-              title = "User Friendly"
+              title = "Free To Use"
               text = {`Using this software does not require any special training.
                      The interface follows modern and proper design guidelines,
                      making it easy to use.  `}>
-               <Smile />
+                    <img src="/Jump.svg" alt='' className='w-[80%] h-auto'/>
+
             </Card>
 
             <Card
@@ -85,9 +92,18 @@ export default function Home() {
                         enable users to gain better insight into their data to
                         make a better decision. Besides the software is updated
                          every 3 months `}>
-               <Update />
-            </Card>
+                <img src="/Cloud.svg" alt='' className='w-[80%] h-auto'/>
 
+            </Card>
+            <Card
+               title = {"Customers Choice"}
+               text = {`It provides Live update from Sales
+                        enable users to gain better insight into their data to
+                        make a better decision. Besides the software is updated
+                         every 3 months `}>
+                <img src="/Rating.svg" alt='' className='w-[80%] h-auto'/>
+
+            </Card>
          </div>
 
 
