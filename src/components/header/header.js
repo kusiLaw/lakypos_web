@@ -13,8 +13,8 @@ export default function Header () {
 
 
   return (
-    <header className='fixed top-0 right-0 left-0  bg-white w-full h-fit drop-shadow-lg z-30'>
-        <div className='w-full h-fit bg-transparent  '>
+    <header className='fixed top-0 right-0 left-0 flex justify-center bg-white w-full h-fit  z-30'>
+        <div className='w-full h-fit bg-transparent max-w-[2560px] shadow-lg'>
           <div className='flex justify-between items-center w-full py-2 px-2 md:px-8 '>
             <Logo />
              <nav className='w-[50%]  flex justify-end md:justify-center items-center'>

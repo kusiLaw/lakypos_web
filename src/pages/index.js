@@ -26,8 +26,8 @@ export default function Home() {
      <Social />
      <NotifyMe />
      <UnderDev />
-     <section className='flex relative  items-center h-[90vh] md:h-[85vh] min-h-fit
-                 bg-fixed bg-no-repeat bg-cover bg-[url("../../public/sales_sm.jpg")] md:bg-[url("../../public/unity2.jpg")] '>
+     <section className='flex relative  items-center h-[90vh] md:h-[85vh] min-h-fit max-h-[1080px]
+                 bg-fixed bg-no-repeat bg-cover bg-top bg-[url("../../public/sales_sm.jpg")] md:bg-[url("../../public/unity2.jpg")] '>
           <div className='flex flex-col items-center justify-center h-full w-full      min-h-fit
                        backdrop-blur-sm bg-black/30 ' >
                 <div className='flex justify-center flex-col  mt-[15%]  md:-mt-10 md:gap-5
