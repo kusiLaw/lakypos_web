@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {useState} from 'react'
 import { FaFacebookMessenger, FaWhatsapp } from 'react-icons/fa'
 import { HiOutlineChat} from 'react-icons/hi'
@@ -19,11 +20,12 @@ const Social = () => {
                   />
             </div>
             <div className=' font-black text-[3.4rem] text-[#128C7E] drop-shadow-md '>
-                <img className='w-[35px] md:w-[40px]'
-                  src={'/whatsap.svg'}
-                  alt="Your Name"
-                  />
-
+                <Link href="https://wa.me/233243689393">
+                    <img className='w-[35px] md:w-[40px]'
+                        src={'/whatsap.svg'}
+                        alt="Your Name"
+                        />
+                </Link>
             </div>
           </>
           }
