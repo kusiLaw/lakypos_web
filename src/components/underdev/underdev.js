@@ -10,23 +10,21 @@ const UnderDev = () => {
   return (
     <PopUpWindow display={display} closeFn={setDisplay}>
       <div className="px-2 md:px-8">
-        <h2 className="text-xl font-medium text-center">Welcome to LakyPOS</h2>
+        <h2 className="text-xl font-medium text-center text-context_color">Welcome to LakyPOS</h2>
         <p className="py-8 text-lg font-light">This page is under development. Some component may not
            work as expected. <br/> We are working very hard to make it become fully functional<br/>
            Thank you.
         </p>
 
         <div className="flex justify-end gap-6">
-          <button onClick={()=>{setDisplay(false)}} className="text-end font-semibold border-1 rounded-xl
-          hover:text-default_blue cursor-pointer text-lg">
+          <button onClick={()=>{setDisplay(false)}} className="text-end md:font-semibold border-1 rounded-xl
+          hover:text-context_color cursor-pointer text-lg">
             Take a tour
           </button>
-          <button onClick={()=>{setDisplay(false); setDisplayNotifyMe(true)}} className="text-end font-semibold
-          hover:text-default_blue cursor-pointer text-lg">Notify Me
+          <button onClick={()=>{setDisplay(false); setDisplayNotifyMe(true)}} className="text-end md:font-semibold
+          hover:text-context_color cursor-pointer text-lg">Notify-Me
             </button>
-     
         </div>
-        
       </div>
     </PopUpWindow>
   )
