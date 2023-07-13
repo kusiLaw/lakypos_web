@@ -15,9 +15,9 @@ import { FaQuoteLeft } from 'react-icons/fa';
 import UnderDev from '@/components/underdev/underdev';
 
 export default function Home() {
- 
+
  const handleSubmit = () =>{
-   
+
   }
 
   return (
@@ -35,71 +35,71 @@ export default function Home() {
                        backdrop-blur-sm bg-black/30 ' >
                 <div className='flex justify-center flex-col  mt-[15%]  md:-mt-10 md:gap-5
                                 text-white w-full h-full px-3 md:px-8 lg:px-16 overflow-hidden  '>
-                    <h2 className='text-2xl  md:text-[2rem] lg:text-[2.8rem]/[55px] select-text   min-h-fit
+                    <h2 className='text-2xl  md:text-[2rem] lg:text-[2.5rem]/[55px] select-text   min-h-fit
                     md:text-left font-semibold md:font-extrabold '>
                     LAKY POS FOR SMALL AND LARGE SCALE<span className='lg:block'>  BUSINESSES</span></h2>
                     <p className='text-lg md:text-xl lg:text-2xl my-5 font-lt md:font-medium '>
-                       Welcome to lakyPOS. 
-                       Users{"'"} Choice Point of Sales Software.   
+                       Welcome to lakyPOS.
+                       Users{"'"} Choice Point of Sales Software.
                      <span className='block my-5 font-light  tracking-widest'>  Free | Fast | User Friendly | Live Update. </span>
                     </p>
-                    <div className='md:mt-2 flex gap-4 '> 
-                            <LinkButton 
+                    <div className='md:mt-2 flex gap-4 '>
+                            <LinkButton
                               url = '#'
                               text= 'Support Us'
-                              font = 'md:text-2xl md:font-semibold'
+                              font = 'md:text-xl md:font-semibold'
                               px = 'px-6 md:px-8'
-                              py = 'py-3 md:py-4'
+                              py = 'py-3 md:py-3'
                               bg='bg-[#ff6e40]'
                               color='text-white'
-                            />   
+                            />
                     </div>
                 </div>
-        
-        </div> 
-        
+
+        </div>
+
      </section>
-   
-    <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'> 
-    
-         <h2 className='self-center  text-default_blue font-black text-2xl md:text-[2rem]'>
+
+    <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'>
+
+         <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
           BENEFITS </h2>
-         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 '>  
+         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 '>
             <Card title = "Business Growth"
                    text = {` LakyPOS software is aimed to help you grow your company.
                        You do not require to pay any money before using this project.
                         Thanks to Lakypos team `}>
                    <Grow />
             </Card>
-            <Card 
+            <Card
               title = "User Friendly"
-              text = {`Using this software does not require any special training. 
-                     The interface follows modern and proper design guidelines, 
+              text = {`Using this software does not require any special training.
+                     The interface follows modern and proper design guidelines,
                      making it easy to use.  `}>
                <Smile />
-            </Card> 
+            </Card>
 
-            <Card                
+            <Card
                title = {"Live Update"}
-               text = {`It provides Live update from Sales 
-                        enable users to gain better insight into their data to 
+               text = {`It provides Live update from Sales
+                        enable users to gain better insight into their data to
                         make a better decision. Besides the software is updated
                          every 3 months `}>
                <Update />
             </Card>
 
          </div>
-        
-         
+
+
      </section>
 
     <section className='py-16 md:py-20 relative px-3 md:px-8 lg:px-16  c-flex  '>
        <div className='absolute top-0 left-3 md:left-12 lg:left-20 text-[3rem] md:text-[5rem] text-default_hover -rotate-[25deg] -z-10 opacity-50'>
-         <FaQuoteLeft /> 
+         <FaQuoteLeft />
        </div>
-       
+
        <div className='flex flex-col'>
-          <h2 className='self-center  text-default_blue font-black text-2xl 
+          <h2 className='self-center  text-default_blue font-black text-2xl
           md:text-[2rem]'>
           FAQ
           </h2>
@@ -108,11 +108,11 @@ export default function Home() {
              question='Why lakyPOS  and what do we use it for ?'
              num = '01'
              >
-                 <p>LakyPOS is a point of sale software for 
-                 managing, tracking sales data and sales 
-                 transaction of a retails shop.   
-                 The LakyPOS team is working greatly to 
-                 release a new version for Windows,  
+                 <p>LakyPOS is a point of sale software for
+                 managing, tracking sales data and sales
+                 transaction of a retails shop.
+                 The LakyPOS team is working greatly to
+                 release a new version for Windows,
                  Linux, Mac, and Android devices</p>
 
              </Fag>
@@ -121,14 +121,14 @@ export default function Home() {
              question='What is the difference between lakyPOS and lakyPhonePOS ?'
              num = '02'
              >
-                <p>LakyPOS is a newer version of <Link href=''><span className='inline text-blue-600 '>LakyPhonePOS</span> </Link> . 
-                 After 8years of working experience in mobile phone services and sales, 
-                 the developer <Link href=''><span className='inline text-blue-600 '>(Lawrence Addai Kusi ) </span> </Link> 
-                 came out with the first version of this software named “LakyPhonePOS” 
-                 to manage sales transactions and automate other repetitive tasks at 
-                 the mobile phone shop.  The new version is a general-purpose POS software 
-                 to manage sales and transactions hence the name lakyPOS. 
-                 The new version also comes with other new features and it will be launched in 
+                <p>LakyPOS is a newer version of <Link href=''><span className='inline text-blue-600 '>LakyPhonePOS</span> </Link> .
+                 After 8years of working experience in mobile phone services and sales,
+                 the developer <Link href=''><span className='inline text-blue-600 '>(Lawrence Addai Kusi ) </span> </Link>
+                 came out with the first version of this software named “LakyPhonePOS”
+                 to manage sales transactions and automate other repetitive tasks at
+                 the mobile phone shop.  The new version is a general-purpose POS software
+                 to manage sales and transactions hence the name lakyPOS.
+                 The new version also comes with other new features and it will be launched in
                  August 2023. <Link href=''><span className='inline text-blue-600 '>Notified Me</span></Link>  when released</p>
              </Fag>
 
@@ -137,29 +137,29 @@ export default function Home() {
              num = '03'
              >
               <p>
-                  LakyPOS is a free software under the <Link href=''><span className='inline text-blue-600 '> MIT Licence. </span></Link>   
-                   It aimed to help you grow your company. 
+                  LakyPOS is a free software under the <Link href=''><span className='inline text-blue-600 '> MIT Licence. </span></Link>
+                   It aimed to help you grow your company.
                   You do not require to pay any money before using this software.
-                   Thanks to the lakyPOS team. You can support 
-                   lakyPOS project to help us provide better solutions and seamless features.  
-                   <Link href=''><span className='inline text-blue-600 '> Support Us  </span></Link> Or<Link href=''><span className='fag_links'> Join Our Team</span> </Link>  
+                   Thanks to the lakyPOS team. You can support
+                   lakyPOS project to help us provide better solutions and seamless features.
+                   <Link href=''><span className='inline text-blue-600 '> Support Us  </span></Link> Or<Link href=''><span className='fag_links'> Join Our Team</span> </Link>
              </p>
 
 
              </Fag>
-            
+
           </div>
        </div>
-    </section> 
+    </section>
 
-     <section className='contact_us flex'> 
+     <section className='contact_us flex'>
         <h2>Support</h2>
         <div className='contact_us_wrapper '>
           <div className='contact_note '>
              <h3>Contact US</h3>
              <p> Your feedback is important to Us. </p>
              <p>Our team is here to help you get support, answers to your questions,
-              suggestions and make sure you get great user experience with our products.</p> 
+              suggestions and make sure you get great user experience with our products.</p>
           </div>
           <div className='form_wrapper -c-flex'>
              <form onSubmit={handleSubmit} className='contact_form c-flex'>
@@ -171,19 +171,19 @@ export default function Home() {
                          <InputText  label='Email' name='email'/>
                       </div>
                   </div>
-       
+
                 <div className='form_text' >
                      <TextArea label="Message" name="message" maxLength='500'/>
                 </div>
                 <div className='contact_btn_wrapper flex' >
-                     <LinkButton 
+                     <LinkButton
                         text= 'Submit'
                         padding = '12px 40px'
                         border = '3'
                         color='#132f4c'
-                      /> 
+                      />
                 </div>
-                
+
              </form>
           </div>
         </div>

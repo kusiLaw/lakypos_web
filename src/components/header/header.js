@@ -21,22 +21,22 @@ export default function Header () {
                 <div className='flex md:hidden  '>
                     <MobileList open = {isOpen} />
                     <div className={``}>
-                      <Hamburger size={25} 
+                      <Hamburger size={25}
                         onToggle={toggled => {
                           if (toggled) {
                            setOpen(true)
                           } else {
                            setOpen(false)
                           }
-                       
+
                         }}
                       />
                     </div>
                 </div>
 
                 <div className='hidden md:block'>
-                   
-                   <ul className='flex text-2xl font-medium gap-6 cursor-pointer'>
+
+                   <ul className='flex text-lg font-medium gap-6 cursor-pointer'>
                       <li>Home</li>
                       <li>About</li>
                       <li>FAQ</li>
@@ -44,18 +44,17 @@ export default function Header () {
                 </div>
              </nav>
              <div className='hidden md:flex' >
-               
-               <button onClick={() => setDisplayNotifyMe(true)} className='md:text-xl  bg-white  text-context_color
-               shadow-md  px-3 py-2  rounded-full  border border-context_color  
+
+               <button onClick={() => setDisplayNotifyMe(true)} className='md:text-lg  bg-white  text-context_color
+               shadow-sm  px-3 py-1  rounded-full  border border-context_color
                hover:bg-[#fc5c2c] hover:text-white '>
                            Get Update Notification
                   </button>
                   {/* <Link href={''}>Join Us</Link> */}
-             </div> 
+             </div>
             </div>
        </div>
 
     </header>
   )
 }
-
