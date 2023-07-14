@@ -1,8 +1,5 @@
 import Head from 'next/head'
 import Link from "next/link";
-import { GrGrow as Grow } from "@react-icons/all-files/gr/GrGrow";
-import { GrUpdate as Update } from "@react-icons/all-files/gr/GrUpdate";
-import { FaRegSmileWink as Smile } from "@react-icons/all-files/fa/FaRegSmileWink";
 import Layout from '@/components/layout/layout'
 import Card from '@/components/cards/card'
 import InputText from '@/components/input/input'
@@ -64,19 +61,26 @@ export default function Home() {
 
          <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
           BENEFITS </h2>
-         <div className='grid grid-cols-1  md:grid-cols-3 gap-6 md:gap-8 '>
+         <div className='grid grid-cols-1  md:grid-cols-2 gap-6 md:gap-6 '>
             <Card title = "Business Growth"
                    text = {` LakyPOS software is aimed to help you grow your company.
                        You do not require to pay any money before using this project.
                         Thanks to Lakypos team `}>
-                   <Grow />
+
+
+                     <img src="/Meeting.svg" alt='' className='w-[80%] drop-shadow-md h-auto'/>
+
+
+
+
             </Card>
             <Card
-              title = "User Friendly"
+              title = "Free To Use"
               text = {`Using this software does not require any special training.
                      The interface follows modern and proper design guidelines,
                      making it easy to use.  `}>
-               <Smile />
+                    <img src="/Jump.svg" alt='' className='w-[80%] h-auto'/>
+
             </Card>
 
             <Card
@@ -85,26 +89,34 @@ export default function Home() {
                         enable users to gain better insight into their data to
                         make a better decision. Besides the software is updated
                          every 3 months `}>
-               <Update />
-            </Card>
+                <img src="/Cloud.svg" alt='' className='w-[80%] h-auto'/>
 
+            </Card>
+            <Card
+               title = {"Customers Choice"}
+               text = {`It provides Live update from Sales
+                        enable users to gain better insight into their data to
+                        make a better decision. Besides the software is updated
+                         every 3 months `}>
+                <img src="/Rating.svg" alt='' className='w-[80%] h-auto'/>
+
+            </Card>
          </div>
 
 
      </section>
 
-    <section className='py-16 md:py-20 relative px-3 md:px-8 lg:px-16  c-flex  '>
+    <section className='py-14 md:py-16 relative px-3 md:px-8 lg:px-12  c-flex  '>
        <div className='absolute top-0 left-3 md:left-12 lg:left-20 text-[3rem] md:text-[5rem] text-default_hover -rotate-[25deg] -z-10 opacity-50'>
          <FaQuoteLeft />
        </div>
 
-       <div className='flex flex-col'>
-          <h2 className='self-center  text-default_blue font-black text-2xl
-          md:text-[2rem]'>
-          FAQ
-          </h2>
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
-             <Fag className="Fag"
+       <div className='flex  flex-col md:px-8 lg:px-16  gap-16'>
+          <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
+             FAQ </h2>
+
+          <div className='grid lg:grid-cols-2 gap-4 gap-x-4'>
+             <Fag
              question='Why lakyPOS  and what do we use it for ?'
              num = '01'
              >
@@ -117,7 +129,7 @@ export default function Home() {
 
              </Fag>
 
-             <Fag className="Fag"
+             <Fag
              question='What is the difference between lakyPOS and lakyPhonePOS ?'
              num = '02'
              >
@@ -132,7 +144,7 @@ export default function Home() {
                  August 2023. <Link href=''><span className='inline text-blue-600 '>Notified Me</span></Link>  when released</p>
              </Fag>
 
-             <Fag className="Fag"
+             <Fag
              question='Is lakyPOS free to use?'
              num = '03'
              >
@@ -142,7 +154,8 @@ export default function Home() {
                   You do not require to pay any money before using this software.
                    Thanks to the lakyPOS team. You can support
                    lakyPOS project to help us provide better solutions and seamless features.
-                   <Link href=''><span className='inline text-blue-600 '> Support Us  </span></Link> Or<Link href=''><span className='fag_links'> Join Our Team</span> </Link>
+                   <Link href=''><span className='inline text-blue-600 '> Support Us  </span></Link> Or
+                   <Link href=''><span className='inline text-blue-600'> Join Our Team</span> </Link>
              </p>
 
 
@@ -152,7 +165,7 @@ export default function Home() {
        </div>
     </section>
 
-     <section className='contact_us flex'>
+     {/* <section className='contact_us flex'>
         <h2>Support</h2>
         <div className='contact_us_wrapper '>
           <div className='contact_note '>
@@ -187,7 +200,7 @@ export default function Home() {
              </form>
           </div>
         </div>
-     </section>
+     </section> */}
 
 
 

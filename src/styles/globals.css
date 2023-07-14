@@ -22,10 +22,9 @@
 
 
 
-.contact_us{
+/* .contact_us{
   padding: 1.5rem;
   background-color: white;
-  /* background-image:url('../../public/images/double-bubble-outline.png'),  */
   flex-direction: column;;
   justify-content: center;
   padding-bottom: 2.5rem;
@@ -50,19 +49,15 @@
   color: rgb(202, 201, 201);
   width: 100%;
   background-color: #132f4c;
-}
+} */
 
 
 
 
 
 
-.fag-container h2{
- margin: 2rem;
- align-self: center;
-}
 
-
+/*
 .fag_links{
  display: inline-block;
  margin: 0 0.2rem;
@@ -76,7 +71,7 @@
 
 .welcome .ui{
  color: #818799;
-}
+} */
 
 /* .welcome_buttons{
  flex-direction: column;
@@ -130,7 +125,7 @@
 
 
 
- .contact_us{
+ /* .contact_us{
   padding: 2.5rem 2rem;
   justify-items: center;
 
@@ -150,20 +145,20 @@
  .form_email{
   display: inline-block;
   width: 45%;
- }
+ } */
 
 
- .fag-container{
+ /* .fag-container{
   padding: 5rem;
- }
+ } */
 
 }
 
 
 @media screen and (min-width: 1024px ) {
- 
 
 
+/*
  .contact_us{
   padding: 5rem 2rem;
   padding-bottom: 10rem;
@@ -179,13 +174,12 @@
 
  .contact_us_wrapper{
   background-image: linear-gradient(-105deg,
-                   white  0%, 
+                   white  0%,
                    white  50%,
                    #132f4c 50%);
-  
+
    display:flex;
    justify-content: space-between;
-  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 2px, rgba(0, 0, 0, 0.23) 0px 1px 1px; */
    width: 90%;
    align-self: center;
    border-radius: 3px;
@@ -194,7 +188,7 @@
 
  .form_wrapper{
    width: 50%;
-   flex-direction: column;   
+   flex-direction: column;
    align-items: center;
    align-content: center;
  }
@@ -220,8 +214,6 @@
 .download{
   padding: 25rem 65rem;
   border: 3px solid var(--color-dark-text);
-}
+} */
 
 }
-
-
