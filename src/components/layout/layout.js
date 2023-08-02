@@ -6,20 +6,22 @@ import Footer from "../footer/footer";
 
 export default function Layout({ children }) {
  return (
-   <div className='w-full h-auto relative '>
+   <div className='w-full h-auto relative flex justify-center'>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <title>LakyPOS</title>
         <meta name="description"  content="LakyPos, free and preferred point of sales software"/>
       </Head>
-
-      <Header/>     
-      <main className="">
-          {children}
-      </main>
-     
-      <Footer/>
+      <div className="max-w-[2560px] relative">
+          <Header/>     
+          <main className="">
+              {children}
+          </main>
+        
+          <Footer/>
+      </div>
+ 
    </div>
  );
 }
