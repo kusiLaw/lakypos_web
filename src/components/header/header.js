@@ -14,10 +14,10 @@ export default function Header () {
 
   return (
     <header className='fixed top-0 right-0 left-0 flex justify-center bg-white w-full h-fit  z-30'>
-        <div className='w-full h-fit bg-transparent max-w-[2560px] shadow-lg'>
+        <div className='w-full h-fit bg-transparent max-w-[2560px] shadow-lg '>
           <div className='flex justify-between items-center w-full py-2 px-2 md:px-8 '>
             <Logo />
-             <nav className='w-[50%]  flex justify-end md:justify-center items-center'>
+             <nav className='w-[50%]  flex justify-end md:justify-end items-center border'>
                 <div className='flex md:hidden  '>
                     <MobileList open = {isOpen} />
                     <div className={``}>
@@ -34,24 +34,26 @@ export default function Header () {
                     </div>
                 </div>
 
-                <div className='hidden md:block'>
+                <div className='hidden md: md:flex  '>
+                  <div className="flex items-center gap-6">
+                    <Link href={'https://github.com/kusiLaw/laky-phone-POS'} target="_blank" className='md:text-lg  bg-white  text-context_color
+                          shadow-sm  px-3 py-1  rounded-full  border border-context_color
+                          hover:bg-[#fc5c2c] hover:text-white '>
+                               Source Code
+                      </Link>
+                      {/* <Link href={''}>Join Us</Link> */}
 
-                   <ul className='flex text-lg font-medium gap-6 cursor-pointer'>
-                      <li>Home</li>
-                      <li>About</li>
-                      <li>FAQ</li>
-                  </ul>
+                    <ul className='flex text-lg font-medium gap-6 cursor-pointer '>
+                        <li className="hover:text-context_color"><Link href={'#'}>Home</Link></li>
+                        <li className="hover:text-context_color"><Link href={'#'}>About</Link></li>
+                        <li className="hover:text-context_color"><Link href={'#'}>FAQ</Link></li>
+                    </ul>
+                  </div>
+               
+                  
                 </div>
              </nav>
-             <div className='hidden md:flex' >
-
-               <button onClick={() => setDisplayNotifyMe(true)} className='md:text-lg  bg-white  text-context_color
-               shadow-sm  px-3 py-1  rounded-full  border border-context_color
-               hover:bg-[#fc5c2c] hover:text-white '>
-                           Get Update Notification
-                  </button>
-                  {/* <Link href={''}>Join Us</Link> */}
-             </div>
+             
             </div>
        </div>
 
