@@ -11,6 +11,7 @@ import NotifyMe from '@/components/forms/notifyMe';
 import { FaQuoteLeft } from 'react-icons/fa';
 import UnderDev from '@/components/underdev/underdev';
 import Devices from '@/components/device';
+import Carousal from '@/components/carousal/carousal';
 
 
 export default function Home() {
@@ -60,8 +61,7 @@ export default function Home() {
      </section>
 
     <section>
-        <Devices img ={'./images/pos_1.png'}/>
-        <Devices laptop={false} img ={'./images/pos_2.png'}/>
+        <Carousal />
 
     </section>
 
