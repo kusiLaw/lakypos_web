@@ -60,11 +60,6 @@ export default function Home() {
 
      </section>
 
-    <section>
-        <Carousal />
-
-    </section>
-
     <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'>
 
          <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
@@ -113,6 +108,33 @@ export default function Home() {
 
 
      </section>
+
+
+     <section className='max-w-[100%] flex flex-col justify-between '>
+    <div className="flex mb-[5rem] justify-center">
+        <h2 className='self-center uppercase  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
+              About
+           </h2>
+    </div>
+
+    <div className='max-w-[100%]  flex flex-col-reverse justify-between  md:flex-row  '>
+        <div className='w-[50%]'>
+            <>
+            Lakypos was created by Lawrence Kusi in 2020 as a result of solving the daily repetitive tasks at 
+            the mobile phone shop. It is a ‘Post of Sale’ app purposely made to be used in mobile phone shops 
+            as at the time of creation. The developer has the mind to make it open source and more generic 
+            to serve various needs. The app was created with Python, PySide, and MySql and compiled for
+             window distributions.
+            </>
+        </div>
+        <div className='md:max-w-[50%] flex justify-center border border-red-400'>
+        <Carousal />
+        </div>
+    </div>
+      
+    </section>
+
+
 
     <section className='py-14 md:py-16 relative px-3 md:px-8 lg:px-12  c-flex  '>
        <div className='absolute top-0 left-3 md:left-12 lg:left-20 text-[3rem] md:text-[5rem] text-default_hover -rotate-[25deg] -z-10 opacity-50'>
