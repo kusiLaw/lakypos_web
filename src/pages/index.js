@@ -10,6 +10,8 @@ import Social from '@/components/social/social';
 import NotifyMe from '@/components/forms/notifyMe';
 import { FaQuoteLeft } from 'react-icons/fa';
 import UnderDev from '@/components/underdev/underdev';
+import Devices from '@/components/device';
+
 
 export default function Home() {
 
@@ -56,6 +58,12 @@ export default function Home() {
         </div>
 
      </section>
+
+    <section>
+        <Devices img ={'./images/pos_1.png'}/>
+        <Devices laptop={false} img ={'./images/pos_2.png'}/>
+
+    </section>
 
     <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'>
 
