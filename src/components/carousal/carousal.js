@@ -11,7 +11,7 @@ import Devices from '../device';
 
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-export default function Carousal() {
+export default function Carousal({children}) {
   return (
     <>
       <Swiper
@@ -33,7 +33,13 @@ export default function Carousal() {
         <Devices img ={'./images/pos_1.png'}/>
         </SwiperSlide>
         <SwiperSlide>
-        <Devices laptop={false} img ={'./images/pos_2.png'}/>
+        <Devices img ={ './images/lakypos_2.PNG'}/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Devices laptop={false} img ={'./images/lakypos_1.PNG'}/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <Devices laptop={false} img ={'./images/lakypos_5.PNG'}/>
         </SwiperSlide>
       </Swiper>
     </>

@@ -110,24 +110,29 @@ export default function Home() {
      </section>
 
 
-     <section className='max-w-[100%] flex flex-col justify-between '>
+     <section className='max-w-[100%] flex flex-col justify-between text-default_blue'>
     <div className="flex mb-[5rem] justify-center">
-        <h2 className='self-center uppercase  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
+        <h2 className='self-center uppercase   font-black text-2xl mdd:text-[1.8rem]'>
               About
            </h2>
     </div>
 
-    <div className='max-w-[100%]  flex flex-col-reverse justify-between  md:flex-row  '>
-        <div className='w-[50%]'>
-            <>
-            Lakypos was created by Lawrence Kusi in 2020 as a result of solving the daily repetitive tasks at 
-            the mobile phone shop. It is a ‘Post of Sale’ app purposely made to be used in mobile phone shops 
-            as at the time of creation. The developer has the mind to make it open source and more generic 
-            to serve various needs. The app was created with Python, PySide, and MySql and compiled for
-             window distributions.
-            </>
+    <div className='max-w-[100%] px-3 md:px-8 lg:px-16 lg:mb-[3rem] flex flex-col-reverse gap-6 justify-between  lg:flex-row  '>
+        <div className='lg:max-w-[50%] text-xl md:text-xl tracking-wide text-center  p-2 md:p-4  flex flex-col lg:gap-4  '>
+            
+
+          <p className='lg:pt-4'>
+            <span className='capitalize font-black text-context_color '>Lakypos</span> was created by Lawrence Kusi in 2020 as a result of solving the daily repetitive tasks at 
+            the mobile phone shop. It is a <strong>Post of Sale</strong> application, purposely made to be used in mobile phone shops 
+            as at the time of creation. The app was created with Python, PySide, and MySql and compiled for window distributions. Popular phone shops in Ghana still use the first version of this app.
+          </p>
+          <p>
+            The developer has the mind to make it open-source and more generic
+            to serve various needs and support cloud storage. To join the team kindly email me to lawrence.kusi.addai@gmail.com 
+          </p>
+
         </div>
-        <div className='md:max-w-[50%] flex justify-center border border-red-400'>
+        <div className='lg:max-w-[50%] flex justify-cente'>
         <Carousal />
         </div>
     </div>
