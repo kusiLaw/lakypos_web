@@ -45,8 +45,8 @@ export default function Header () {
 
                     <ul className='flex text-lg font-medium gap-6 cursor-pointer '>
                         <li className="hover:text-context_color"><Link href={'#'}>Home</Link></li>
-                        <li className="hover:text-context_color"><Link href={'#'}>About</Link></li>
-                        <li className="hover:text-context_color"><Link href={'#'}>FAQ</Link></li>
+                        <li className="hover:text-context_color"><Link href={'#about'}>About</Link></li>
+                        <li className="hover:text-context_color"><Link href={'#fag'}>FAQ</Link></li>
                     </ul>
                   </div>
                

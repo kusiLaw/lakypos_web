@@ -13,7 +13,7 @@ export default function Layout({ children }) {
         <title>LakyPOS</title>
         <meta name="description"  content="LakyPos, free and preferred point of sales software"/>
       </Head>
-      <div className="max-w-[2560px] relative">
+      <div className="max-w-[2560px] w-[100%] relative">
           <Header/>     
           <main className="">
               {children}
