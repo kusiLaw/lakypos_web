@@ -2,14 +2,14 @@ import Head from 'next/head'
 import Link from "next/link";
 import Layout from '@/components/layout/layout'
 import Card from '@/components/cards/card'
-import InputText from '@/components/input/input'
-import TextArea from '@/components/input/textarea'
 import Fag from '@/components/fag/fag';
 import LinkButton from '@/components/link_button/button';
 import Social from '@/components/social/social';
 import NotifyMe from '@/components/forms/notifyMe';
 import { FaQuoteLeft } from 'react-icons/fa';
 import UnderDev from '@/components/underdev/underdev';
+import Carousal from '@/components/carousal/carousal';
+
 
 export default function Home() {
 
@@ -57,7 +57,7 @@ export default function Home() {
 
      </section>
 
-    <section className='py-20  px-3 md:px-8 lg:px-16 gap-16 bg-white flex flex-col'>
+    <section  id='benefit' className='py-20  px-3 md:px-8  lg:px-16 gap-16 bg-white flex flex-col'>
 
          <h2 className='self-center  text-default_blue font-black text-2xl mdd:text-[1.8rem]'>
           BENEFITS </h2>
@@ -106,7 +106,39 @@ export default function Home() {
 
      </section>
 
-    <section className='py-14 md:py-16 relative px-3 md:px-8 lg:px-12  c-flex  '>
+
+     <section id='about' className='max-w-[100%] flex flex-col  justify-between text-default_blue'>
+    <div className="flex mb-[5rem] justify-center">
+        <h2 className='self-center uppercase   font-black text-2xl mdd:text-[1.8rem]'>
+              About
+           </h2>
+    </div>
+
+    <div className='max-w-[100%] px-3 md:px-8 lg:px-16 lg:mb-[3rem] flex flex-col-reverse gap-6 justify-between  lg:flex-row  '>
+        <div className='lg:max-w-[50%] text-xl md:text-xl tracking-wide text-center  p-2 md:p-4  flex flex-col lg:gap-4  '>
+            
+
+          <p className='lg:pt-4'>
+            <span className='capitalize font-black text-context_color '>Lakypos</span> was created by Lawrence Kusi in 2020 as a result of solving the daily repetitive tasks at 
+            the mobile phone shop. It is a <strong>Post of Sale</strong> application, purposely made to be used in mobile phone shops 
+            as at the time of creation. The app was created with Python, PySide, and MySql and compiled for window distributions. Popular phone shops in Ghana still use the first version of this app.
+          </p>
+          <p>
+            The developer has the mind to make it open-source and more generic
+            to serve various needs and support cloud storage. To join the team kindly email me to lawrence.kusi.addai@gmail.com 
+          </p>
+
+        </div>
+        <div className='lg:max-w-[50%] flex justify-cente'>
+        <Carousal />
+        </div>
+    </div>
+      
+    </section>
+
+
+
+    <section id ='fag' className='py-14 lg:mb-[5rem] relative px-3 md:px-8 lg:px-12  c-flex  '>
        <div className='absolute top-0 left-3 md:left-12 lg:left-20 text-[3rem] md:text-[5rem] text-default_hover -rotate-[25deg] -z-10 opacity-50'>
          <FaQuoteLeft />
        </div>
@@ -164,44 +196,6 @@ export default function Home() {
           </div>
        </div>
     </section>
-
-     {/* <section className='contact_us flex'>
-        <h2>Support</h2>
-        <div className='contact_us_wrapper '>
-          <div className='contact_note '>
-             <h3>Contact US</h3>
-             <p> Your feedback is important to Us. </p>
-             <p>Our team is here to help you get support, answers to your questions,
-              suggestions and make sure you get great user experience with our products.</p>
-          </div>
-          <div className='form_wrapper -c-flex'>
-             <form onSubmit={handleSubmit} className='contact_form c-flex'>
-                  <div className='form_divider c-flex'>
-                     <div className='form_name'>
-                        <InputText  label='Name' name='name'/>
-                     </div>
-                      <div className='form_email'>
-                         <InputText  label='Email' name='email'/>
-                      </div>
-                  </div>
-
-                <div className='form_text' >
-                     <TextArea label="Message" name="message" maxLength='500'/>
-                </div>
-                <div className='contact_btn_wrapper flex' >
-                     <LinkButton
-                        text= 'Submit'
-                        padding = '12px 40px'
-                        border = '3'
-                        color='#132f4c'
-                      />
-                </div>
-
-             </form>
-          </div>
-        </div>
-     </section> */}
-
 
 
     </Layout>
